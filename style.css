@@ -1,0 +1,54 @@
+.parallax::before {
+    content:"";
+    display:block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    width: 100%;
+    z-index:-1;
+    background-image: url("./images/mani.jpg");
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.parallax {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.parallax, h2 {
+    text-align: center;
+}
+
+h1 {
+    
+}
+
+.diagonale {
+    display: flex;
+    background-color: #1FB2AF;
+    position: absolute;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(0 21%, 100% 0, 100% 100%, 0 81%);
+    /*la fonction skewY permet 
+    de faire la diagonale
+    -ms-transform: skewY(-4deg);
+    -webkit-transform: skewY(-4deg);
+    transform: skewY(-4deg);*/
+}
+
+article {
+    width: 100px;
+    height: 200px;
+}
+
+article, p {
+    border: 1px solid black;
+    width: 25em;
+    padding: 1em;
+
+}
