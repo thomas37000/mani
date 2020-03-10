@@ -1,3 +1,4 @@
+
 .parallax::before {
     content:"";
     display:block;
@@ -22,23 +23,17 @@
     text-align: center;
 }
 
-h1 {
-    
-}
-
 .diagonale {
     display: flex;
+    justify-content: flex-end;
     background-color: #1FB2AF;
     position: absolute;
     color: #fff;
     height: 100%;
     width: 100%;
-    clip-path: polygon(0 21%, 100% 0, 100% 100%, 0 81%);
-    /*la fonction skewY permet 
-    de faire la diagonale
-    -ms-transform: skewY(-4deg);
-    -webkit-transform: skewY(-4deg);
-    transform: skewY(-4deg);*/
+    padding: 10em;
+    clip-path: polygon(0 18%, 100% 3%, 100% 90%, 0 73%);
+
 }
 
 article {
