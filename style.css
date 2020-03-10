@@ -61,3 +61,41 @@ li {
   height: 2rem;
   padding-right: 1rem;
 }
+
+.nos-entreprises {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0 100px 0 100px;
+}
+
+.entreprise {
+  flex-wrap: nowrap;
+  width: 50%;
+  padding: 0 0 50px 0;
+}
+
+.images-entreprise img {
+  height: 200px;
+  width: 200px;
+}
+
+.images-entreprise {
+  float: left;
+}
+.texte-entreprise {
+  height: auto;
+  width: auto;
+  float: left;
+  margin-left: 10px;
+}
+
+.espace-menu {
+  height:100px;
+  width: 100%;
+  background-color: red;
+}
+
+.bold {
+  font-weight: 900;
+}
