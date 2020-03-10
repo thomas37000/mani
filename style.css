@@ -2,6 +2,9 @@
     padding: 0;
     margin: 0;
 }
+
+/* -----------------DEBUT DU FOOTER----------------- */
+
 footer {
     display: flex;
     width: 100vw;
@@ -28,4 +31,6 @@ footer {
 
 .fab {
     color: white;
-}
+} 
+
+/* ---------------------FIN DU FOOTER--------------------- */
