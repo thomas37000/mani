@@ -204,7 +204,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
-  height: 600px;
+  height: 600px; 
 }
 
 .section-entreprises {
