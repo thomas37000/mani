@@ -1,51 +1,154 @@
+/*Page showroom.html*/
+/* calendrier */
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 body {
-    
+    font-family: Montserrat, Arial, sans-serif;
 }
-.parallax::before {
-    content:"";
-    display:block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-height: 100%;
+.table-calendrier {
+    box-shadow: 5px 5px 5px rgba(31,178,175);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 50%;
+}
+.calendrier {
+    background-color: #F6F6F6;
+    padding: 2em;
     width: 100%;
-    z-index:-1;
-    background-image: url("./images/mani.jpg");
-    background-size: cover;
-    opacity: 0.8;
 }
-
-.parallax {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
+.calendrier caption {
+    background-color:#1FB2AF ;
+    color: #F6F6F6;
+    text-align: left;
+    padding: 1em 1em;
+    font-size: 200%;
+    text-transform: uppercase;
+    line-height: 0.9;
 }
-
-.parallax, h2 {
+.calendrier thead th {
+    text-transform: uppercase;
+    color: #2B1C43; 
+}
+.calendrier td, .calendrier th {
     text-align: center;
+    padding: 0.8em;
 }
-
-.diagonale {
-    display: flex;
-    justify-content: flex-end;
+.calendrier .huge {
+    font-size: 200%;
+    display: block;
+}
+.day {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    padding: .5em;
+    border-radius: 100%;
+    transition: all .5s;
+}
+.day:hover {
+    cursor: pointer;
     background-color: #1FB2AF;
-    position: absolute;
-    color: #fff;
-    height: 100%;
-    width: 100%;
-    padding: 10em;
-    clip-path: polygon(0 18%, 100% 3%, 100% 90%, 0 73%);
-
+    border-radius: 0;
+    color: #f6f6f6;
+}
+.current {
+    background-color:#2B1C43 ;
+    color: #f6f6f6;
 }
 
-article {
-    width: 100px;
-    height: 200px;
+/*Page contact.html*/
+/* Formulaire */
+
+.title-contact {
+    color: #1FB2AF;
+    background-color:#fff;
+    width: 68%;
+    text-align: center;
+} 
+
+#formulaire {  
+    display: flex;
+    flex-direction: row;
+    width: 68%;
 }
 
-article, p {
-    border: 1px solid black;
-    width: 25em;
+form ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type:none;
+}
+
+form div {
+    margin: 3em;
+}
+
+li input {
+  width: 100%;
+  padding: 10px;
+  margin: 1.5em;
+  border: none;
+  border-bottom: 1px solid;
+ }
+
+textarea {
+    height: 20em;
+    border-radius: 5px;
+    margin: 1em;
+    padding: 2em; 
+}
+
+#envoyer {
     padding: 1em;
+    color: #000;
+    background-color: transparent;
+    width: 100%;
+}
 
+#nom:hover, #prenom:hover, #email:hover, #motif:hover {
+    background-color: rgb(196, 187, 187);
+}
+
+#envoyer:hover {
+    background-color: #1FB2AF ;
+    color: #fff;
+}
+
+@media only screen and (max-width: 961px) {
+/*Page contact.html*/
+/* Formulaire */
+
+    .title-contact {
+        text-align: right;
+    }
+    textarea {
+        margin: 0 auto;
+    }
+
+    #formulaire {
+        flex-direction: column;
+        width: auto;
+    }
+    
+    form ul {
+        display:flex ;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+
+    form div {
+        margin: 1em;
+    }
+    
+    #nom, #prenom, #email, #motif, textarea {
+        width: 85%;
+    }
+
+    /*Page showroom.html*/
+    /* calendrier */
+
+    .table-calendrier {
+        width: 100%;
+    }
 }

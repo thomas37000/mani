@@ -1,6 +1,6 @@
 /* Formulaire */
 
-h2 {
+.title-contact {
     color: #1FB2AF;
     background-color:#fff;
     width: 68%;
@@ -56,9 +56,10 @@ textarea {
 
 @media only screen and (max-width: 961px) {
 
-    h2 {
+    .title-contact {
         text-align: right;
     }
+    
     textarea {
         margin: 0 auto;
     }
