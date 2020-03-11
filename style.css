@@ -174,7 +174,7 @@ h1 {
 
 .parallax-up {
   width: auto;
-  height: 1000px;
+  height: 800px;
   background-color: #1fb1ae;
   clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
   padding-top: 150px;
@@ -204,7 +204,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
-  height: 100%;
+  height: 600px;
 }
 
 .section-entreprises {
