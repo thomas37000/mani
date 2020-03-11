@@ -1,0 +1,80 @@
+/* Formulaire */
+
+h2 {
+    color: #1FB2AF;
+    background-color:#fff;
+    margin-left: 36em;
+} 
+
+#formulaire {  
+    display: flex;
+    flex-direction: row;
+    box-shadow: 5px 5px 5px rgba(31,178,175);
+    width: 68%;
+}
+
+#bloc-gauche {
+    display: flex;
+    flex-direction: column;
+    width: 30em;
+    
+}
+#bloc-droite {
+    display: flex;
+    justify-content: space-around;
+    width: 30em;
+    margin-left:2em;
+}
+
+textarea {
+	border-radius: 5px;
+	margin-top: 0.5em;
+    padding: 20px; 
+}
+
+form ul {
+	list-style-type:none;
+	
+}
+
+li div {
+  width: 450px;
+  padding: 0 20px;
+}
+
+li input {
+  width: 400px;
+  padding: 10px;
+  margin: 1.5em;
+  border: none;
+  border-bottom: 1px solid;
+ }
+
+textarea {
+    margin-top: 2em;
+    height: 20em;
+}
+
+#envoyer {
+    margin-top: 10em;
+    margin-left: 20em;
+    padding: 1em;
+	width: 150px;
+    color: #000;
+    background-color: transparent;
+}
+
+#nom:hover, #prenom:hover, #email:hover, #motif:hover {
+    background-color: rgb(196, 187, 187);
+    
+}
+#envoyer:hover {
+    background-color: #1FB2AF ;
+    color: #fff;
+}
+
+@media only screen and (max-width: 961px) {
+    #formulaire {
+        width: 50%;
+    }
+}

@@ -1,4 +1,6 @@
-
+body {
+    
+}
 .parallax::before {
     content:"";
     display:block;

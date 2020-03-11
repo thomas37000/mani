@@ -1,0 +1,62 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+body {
+    font-family: Montserrat, Arial, sans-serif;
+}
+.table-calendrier {
+    box-shadow: 5px 5px 5px rgba(31,178,175);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 50%;
+}
+.calendrier {
+    background-color: #F6F6F6;
+    padding: 2em;
+    width: 100%;
+}
+.calendrier caption {
+    background-color:#1FB2AF ;
+    color: #F6F6F6;
+    text-align: left;
+    padding: 30px 20px;
+    font-size: 200%;
+    text-transform: uppercase;
+    line-height: 0.9;
+}
+.calendrier thead th {
+    text-transform: uppercase;
+    color: #2B1C43; 
+}
+.calendrier td, .calendrier th {
+    text-align: center;
+    padding: 0.8em;
+}
+.calendrier .huge {
+    font-size: 200%;
+    display: block;
+}
+.day {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    padding: .5em;
+    border-radius: 100%;
+    transition: all .5s;
+}
+.day:hover {
+    cursor: pointer;
+    background-color: #1FB2AF;
+    border-radius: 0;
+    color: #f6f6f6;
+}
+.current {
+    background-color:#2B1C43 ;
+    color: #f6f6f6;
+}
+
+@media only screen and (max-width: 961px) {
+    .table-calendrier {
+        
+        box-shadow: 5px 5px 5px rgb(54, 29, 196);
+    }
+}
