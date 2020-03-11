@@ -2,12 +2,14 @@
   padding: 0;
   margin: 0;
 }
+/* -----------------DEBUT DU PARALLAX----------------- */
 body, html {
   height: 100%;
 }
 
 body {
   /* The image used */
+  /* overflow-x: hidden; */
   background-image: url("images/S13-JDo-04.10-172.jpg");
 
 
@@ -26,7 +28,6 @@ body {
   z-index: -1000;
   height: auto;
   width: 300px;
-  float: left;
   position: fixed;
   padding-top: 200px;
   padding-left: 65%;
@@ -40,17 +41,48 @@ body {
 
 .parallax-up {
   width: auto;
-  height: 1000px;
+  height: 800px;
   background-color: #1fb1ae;
   /* background-image: url("fond-bleu-2.png"); */
-  clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
 
   /* background-color:red; */
-  font-size:36px;
+  color: white;
 }
 
+.tag-wrap {
+  filter: drop-shadow(0px -10px 10px rgba(0, 0, 0, 0.3));
+}
+
+.wrap-soustitre {
+  display: flex;
+  padding-top: 10px;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.sous-titre {
+  width: 40%;
+}
+
+.parallax-2 {
+  width: auto;
+  height: 200px;
+  background-color: #f4f4f4;
+  /* background-image: url("fond-bleu-2.png"); */
+  clip-path: polygon(0 0%, 100% 90%, 100% 100%, 0 100%);
+  margin-top: -200px;
+}
+.test{
+  height: 300px;
+  background-color: black;
+}
+/* -----------------FIN DU PARALLAX----------------- */
+
+/* -----------------DEBUT DE LA NAV----------------- */
 header {
   z-index: 1000;
+  box-shadow: 1px 1px 12px #555;
 }
 
 body {
@@ -112,11 +144,51 @@ li {
   padding-right: 1rem;
 }
 
+/* -----------------FIN DE LA NAV----------------- */
+
+.titre-contenu {
+  padding: 90px 50px 20px 0;
+  font-size: 30px;
+  text-align: right;
+}
+
+.parallax-up p {
+  text-align: right;
+  font-size: 13px;
+  padding: 0 50px 0 0;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.contenu {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 80px;
+
+}
+.contenu p {
+  font-size: 12px;
+  text-align: left;
+  width: 50%;
+  padding: 0 20px 0 20px;
+}
+.image-contenu {
+  flex-grow: 1;
+  width: 25%;
+  padding: 0 20px 0 20px;
+}
+
+.image-contenu img {
+  display: inline-block;
+  width: 100%;
+}
+
 /* -----------------DEBUT DU FOOTER----------------- */
 
 footer {
     display: flex;
-    width: 100vw;
     height: 80px;
     background-color: #2B1C43;
     color: white;
@@ -140,6 +212,6 @@ footer {
 
 .fab {
     color: white;
-} 
+}
 
 /* ---------------------FIN DU FOOTER--------------------- */
