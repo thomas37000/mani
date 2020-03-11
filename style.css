@@ -2,6 +2,74 @@
   padding: 0;
   margin: 0;
 }
+
+/* -----------------DEBUT DE LA NAV----------------- */
+header {
+  z-index: 1000;
+  box-shadow: 1px 1px 12px #555;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #3d3d3d;
+}
+
+a:active {
+  color: #2b1c43;
+}
+
+header {
+  background-color: #f5f4f5;
+  width: 100vw;
+  z-index: 1000;
+  position: fixed;
+}
+
+li {
+  list-style: none;
+}
+
+.navigation {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.nav_links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0 0.5rem 0;
+
+}
+
+.nav_left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 1.6rem;
+}
+
+.nav_left li {
+  padding-right: 1rem;
+}
+
+.nav_right {
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 2rem;
+}
+
+.logo img {
+  height: 2rem;
+  padding-right: 1rem;
+}
+/*---------------------FIN HEADER------------------*/
+
 /* -----------------DEBUT DU PARALLAX----------------- */
 body, html {
   height: 100%;
@@ -73,78 +141,88 @@ body {
   clip-path: polygon(0 0%, 100% 90%, 100% 100%, 0 100%);
   margin-top: -200px;
 }
-.test{
-  height: 300px;
-  background-color: black;
-}
 /* -----------------FIN DU PARALLAX----------------- */
 
-/* -----------------DEBUT DE LA NAV----------------- */
-header {
-  z-index: 1000;
-  box-shadow: 1px 1px 12px #555;
+
+/*-------------------DEBUT MAIN--------------------*/
+
+h1 {
+  line-height: 120%;
+  padding-bottom: 1rem;
 }
 
-body {
-  font-family: sans-serif;
+.parallax {
+  width: 100%;
+  height: 600px;
 }
 
-a {
-  text-decoration: none;
-  color: #3d3d3d;
+.parallax-up {
+  width: auto;
+  height: 1000px;
+  background-color: #1fb1ae;
+  clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+  padding-top: 150px;
 }
 
-a:active {
-  color: #2b1c43;
+.section-soustitre {
+  text-align: end;
+  width: 100%;
+  height: 10%;
+  margin: 0 5% 50px 0;
+  font-size: 0.9rem;
+  line-height: 140%;
+  color: white;
 }
 
-header {
-  background-color: #f5f4f5;
-  width: 100vw;
-  position: fixed;
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 4%;
 }
 
-li {
-  list-style: none;
+.section-soustitre p {
+  font-style: italic;
 }
 
-.navigation {
-    height: 3rem;
-    display: flex;
-    align-items: center;
-}
-
-.nav_links {
+.flexbox-entreprises {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem 0 0.5rem 0;
-
+  flex-wrap: wrap;
+  align-content: space-between;
+  height: 100%;
 }
 
-.nav_left {
+.section-entreprises {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding-left: 1.6rem;
+  width: 50%;
+  height: auto;
+  flex-shrink: 0;
 }
 
-.nav_left li {
-  padding-right: 1rem;
+.divlogo-entreprises {
+  width: 25%;
+  padding: 0px 2vw 0px 2vw;
+  height: auto;
+  flex-shrink: 0;
 }
 
-.nav_right {
-  justify-content: flex-end;
-  align-items: center;
-  padding-right: 2rem;
+img {
+  max-width:100%;
+  max-height:100%;
 }
 
-.logo img {
-  height: 2rem;
-  padding-right: 1rem;
+.divtext-entreprises {
+  width: auto;
+  height: auto;
+  font-size: 0.9rem;
+  line-height: 140%;
+  padding-right: 2vw;
+  color: white;
 }
 
-/* -----------------FIN DE LA NAV----------------- */
+.divtext-entreprises p span {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
 
 .titre-contenu {
   padding: 90px 50px 20px 0;
@@ -184,6 +262,8 @@ li {
   display: inline-block;
   width: 100%;
 }
+
+/*-------------------FIN MAIN------------------------*/
 
 /* -----------------DEBUT DU FOOTER----------------- */
 
