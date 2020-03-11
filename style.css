@@ -112,9 +112,17 @@ h1 {
   height: 1000px;
   background-color: #1fb1ae;
   clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
-  display: flex;
-  flex-wrap: wrap;
   padding-top: 150px;
+}
+
+.section-soustitre {
+  text-align: end;
+  width: 100%;
+  height: 10%;
+  margin: 0 5% 50px 0;
+  font-size: 0.9rem;
+  line-height: 140%;
+  color: white;
 }
 
 h2 {
@@ -123,16 +131,15 @@ h2 {
   padding-bottom: 4%;
 }
 
-.section-soustitre {
-  display: inline-block;
-  text-align: end;
+.section-soustitre p {
   font-style: italic;
-  width: 100%;
-  height: 10%;
-  margin: 0 5% 0 0;
-  font-size: 0.9rem;
-  line-height: 140%;
-  color: white;
+}
+
+.flexbox-entreprises {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  height: 100%;
 }
 
 .section-entreprises {
