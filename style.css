@@ -1,6 +1,9 @@
 * {
   padding: 0;
   margin: 0;
+
+/*----------------------------DEBUT HEADER---------------------*/
+
 }
 body, html {
   height: 100%;
@@ -20,46 +23,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: transparent;
-}
 
-h1 {
-  line-height: 120%;
-  padding-bottom: 1rem;
-}
-
-.texte {
-  z-index: -1000;
-  height: auto;
-  width: auto;
-  padding-top: 200px;
-  padding-left: 60%;
-  padding-right: 5%;
-  color: #3d3d3d;
-  line-height: 160%;
-  position: fixed;
-}
-
-.parallax {
-  width: 100%;
-  height: 600px;
-}
-
-.parallax-up {
-  width: auto;
-  height: 1000px;
-  background-color: #1fb1ae;
-  /* background-image: url("fond-bleu-2.png"); */
-  clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
-
-  /* background-color:red; */
-  font-size:36px;
-}
-
-header {
-  z-index: 1000;
-}
-
-body {
   font-family: sans-serif;
 }
 
@@ -75,6 +39,7 @@ a:active {
 header {
   background-color: #f5f4f5;
   width: 100vw;
+  z-index: 1000;
   position: fixed;
 }
 
@@ -117,7 +82,93 @@ li {
   height: 2rem;
   padding-right: 1rem;
 }
+/*---------------------FIN HEADER------------------*/
+/*-------------------DEBUT MAIN--------------------*/
 
+h1 {
+  line-height: 120%;
+  padding-bottom: 1rem;
+}
+
+.texte {
+  z-index: -1000;
+  height: auto;
+  width: auto;
+  padding-top: 15%;
+  padding-left: 60%;
+  padding-right: 5%;
+  color: #3d3d3d;
+  line-height: 160%;
+  position: fixed;
+}
+
+.parallax {
+  width: 100%;
+  height: 600px;
+}
+
+.parallax-up {
+  width: auto;
+  height: 1000px;
+  background-color: #1fb1ae;
+  clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 150px;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 4%;
+}
+
+.section-soustitre {
+  display: inline-block;
+  text-align: end;
+  font-style: italic;
+  width: 100%;
+  height: 10%;
+  margin: 0 5% 0 0;
+  font-size: 0.9rem;
+  line-height: 140%;
+  color: white;
+}
+
+.section-entreprises {
+  display: flex;
+  width: 50%;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.divlogo-entreprises {
+  width: 25%;
+  padding: 0px 2vw 0px 2vw;
+  height: auto;
+  flex-shrink: 0;
+}
+
+img {
+  max-width:100%;
+  max-height:100%;
+}
+
+.divtext-entreprises {
+  width: auto;
+  height: auto;
+  font-size: 0.9rem;
+  line-height: 140%;
+  padding-right: 2vw;
+  color: white;
+}
+
+.divtext-entreprises p span {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/*-------------------FIN MAIN------------------------*/
 /* -----------------DEBUT DU FOOTER----------------- */
 
 footer {
