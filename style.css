@@ -68,14 +68,11 @@ body {
   width: 40%;
 }
 
-.parallax-2-home {
+/*.parallax-2-home {
   width: auto;
-  height: 200px;
   background-color: #f4f4f4;
-  /* background-image: url("fond-bleu-2.png"); */
-  clip-path: polygon(0 0%, 100% 90%, 100% 100%, 0 100%);
-  margin-top: -200px;
-}
+}*/
+
 .test{
   height: 300px;
   background-color: black;
@@ -238,6 +235,88 @@ img {
 .divtext-entreprises p span {
   font-size: 1.3rem;
   font-weight: bold;
+}
+
+/********************* CALENDRIER ********************/
+/********************* Parallax-2-home pour le calendrier ********************/
+/********************* à nommer id ou class =Parallax-3 ?????********************/
+.parallax-2-home {
+  width: auto;
+  background-color: #f4f4f4;
+  padding: 5em;
+}
+/********************* Texte à droite du CALENDRIER ********************/
+.calendrierTexte {
+  width: 50%;
+  padding: 1em;
+  margin-bottom: 2em;
+}
+
+.booking {
+  color: #1FB2AF;
+  text-align: center;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+body {
+    font-family: Montserrat, Arial, sans-serif;
+}
+.table-calendrier {
+    box-shadow: 5px 5px 5px rgba(31,178,175);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 80%;
+}
+.calendrier {
+    background-color: #F6F6F6;
+    padding: 2em;
+    width: 100%;
+}
+.calendrier caption {
+    background-color:#2B1C43 ;
+    color: #F6F6F6;
+    text-align: left;
+    padding: 1em 1em;
+    font-size: 200%;
+    text-transform: uppercase;
+    line-height: 0.9;
+}
+.calendrier thead th {
+    text-transform: uppercase;
+    color: #2B1C43; 
+}
+.calendrier td, .calendrier th {
+    text-align: center;
+    padding: 0.8em;
+}
+.calendrier .huge {
+    font-size: 200%;
+    display: block;
+}
+.day {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    padding: .5em;
+    border-radius: 100%;
+    transition: all .5s;
+}
+.day:hover {
+    cursor: pointer;
+    background-color: #1FB2AF;
+    border-radius: 0;
+    color: #f6f6f6;
+}
+.current {
+    background-color:#2B1C43 ;
+    color: #f6f6f6;
+}
+
+@media only screen and (max-width: 961px) {
+    .table-calendrier {
+        width: 100%;
+    }
 }
 
 /* -----------------FIN DE LA NAV----------------- */
