@@ -14,6 +14,7 @@ body, html {
   /* The image used */
   /* overflow-x: hidden; */
   background-image: url("images/S13-JDo-04.10-172.jpg");
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+97&0+0,1+57 */
 
 
   /* Full height */
@@ -28,9 +29,35 @@ body, html {
 }
 
 .body-entreprises {
-  background-image: url("images/graslin.jpg");
+  background-image: url("images/les-entreprises.jpg");
 
 
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+}
+
+.body-contact {
+  background-image: url("images/telephone.jpg");
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+}
+
+.body-showroom {
+  background-image: url("images/showroom.jpg");
   /* Full height */
   height: 100%;
 
@@ -199,7 +226,7 @@ h1 {
 
 .parallax-up {
   width: auto;
-  height: 900px;
+  /* height: 900px; */
   background-color: #1fb1ae;
   clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
   color: white;
@@ -351,14 +378,14 @@ footer {
 .title-contact {
     color: #1FB2AF;
     background-color:#fff;
-    width: 68%;
+    /* width: 68%; */
     text-align: center;
 }
 
 #formulaire {
     display: flex;
     flex-direction: row;
-    width: 68%;
+    padding-left: 5%;
 }
 
 form ul {
@@ -420,5 +447,108 @@ textarea {
 }
 
 .formulaire-contact {
-  width: 100%;
+  /* width: 100%; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* padding-left: 40%; */
+  /* border: 1px solid black; */
+
 }
+
+.adresse {
+  width: 30%;
+  padding-left: 7%;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/*ICI LE CSS PAGE SHOWROOM*/
+.resa {
+    padding: 90px 0px 20px 50px;
+    font-size: 30px;
+    text-align: left;
+    color: #3d3d3d;
+  }
+
+  .text-resa {
+    text-align: left;
+    font-size: 13px;
+    padding: 0px 0px 0px 50px;
+    font-style: italic;
+    width: 40%;
+    color: #3d3d3d;
+  }
+
+  .parallax-2-resa {
+    width: auto;
+    height: 800px;
+    background-color: #f4f4f4;
+    /* background-image: url("fond-bleu-2.png"); */
+    clip-path: polygon(0 0%, 100% 20%, 100% 100%, 0 100%);
+    margin-top: -250px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .displaynone {
+      display: none;
+    }
+  }
+  /* ICI LE CSS CALENDAR*/
+
+  @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+  body {
+      font-family: Montserrat, Arial, sans-serif;
+  }
+  .table-calendrier {
+      box-shadow: 5px 5px 5px rgba(31,178,175);
+      border-radius: 10px;
+      overflow: hidden;
+      width: 70%;
+      margin: 20px 0px 0px 50px;
+  }
+  .calendrier {
+      background-color: #F6F6F6;
+      padding: 2em;
+      width: 100%;
+  }
+  .calendrier caption {
+      background-color:#1FB2AF ;
+      color: #F6F6F6;
+      text-align: left;
+      padding: 30px 20px;
+      font-size: 200%;
+      text-transform: uppercase;
+      line-height: 0.9;
+  }
+  .calendrier thead th {
+      text-transform: uppercase;
+      color: #2B1C43;
+  }
+  .calendrier td, .calendrier th {
+      text-align: center;
+      padding: 0.8em;
+  }
+  .calendrier .huge {
+      font-size: 200%;
+      display: block;
+  }
+  .day {
+      display: inline-block;
+      width: 2em;
+      height: 2em;
+      line-height: 2em;
+      padding: .5em;
+      border-radius: 100%;
+      transition: all .5s;
+  }
+  .day:hover {
+      cursor: pointer;
+      background-color: #1FB2AF;
+      border-radius: 0;
+      color: #f6f6f6;
+  }
+  .current {
+      background-color:#2B1C43 ;
+      color: #f6f6f6;
+  }

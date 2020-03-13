@@ -6,7 +6,7 @@
     <title>Immeuble Manny</title>
     <script src="https://kit.fontawesome.com/61cb14f18b.js" crossorigin="anonymous"></script>
   </head>
-  <body class="body-home">
+  <body class="body-contact">
       <!----------  DEBUT DU HEADER  ------------->
     <header>
       <nav class="nav_links">
@@ -24,7 +24,7 @@
 
       <!----------  Texte sur image top  ------------->
     <div class="texte">
-      <h1>Manny,</br> repère de créatifs à Nantes</h1>
+      <h1>Si vous souhaitez<br>nous contacter</h1>
       <p>Situé entre le Palais de Justice conçu par Jean Nouvel et la future École nationale
         supérieure des Beaux-Arts installée dans les halles Alstom reconverties,
         il exprime avec force la créativité et l’éco-responsabilité, deux défis du monde actuel.
@@ -36,22 +36,56 @@
     <!----------  Texte sur image top  ------------->
     <div class="parallax-home"></div>
 <div class="tag-wrap">
-    <div class="parallax-up-home">
+    <div class="parallax-up-contact">
       <div class="wrap-soustitre-home">
-          <h2 class="titre-contenu">Les Designers</h2>
-          <div class="sous-titre">
-            <p class="italic">Dans le sillage du groupe de design nantais, il constitue un lieu d’accueil privilégié pour des activités d’architecture et de création contemporaine.
-            Drapé dans une résille métallique protectrice, Manny se veut un écrin privilégié pour la création et un signal fort dans le quartier de la création.</p>
-          </div>
+          <h2 class="titre-contenu">Contact</h2>
       </div>
-      <section class="contenu-home">
-        <div class="image-contenu"> <img src="images/contenu-home-1.png" alt="visuel1"> </div>
-        <div class="image-contenu"> <img src="images/contenu-home-2.jpg" alt="visuel2"> </div>
-        <p>Il illustre selon ses concepteurs, l’agence Tetrarc, deux composantes essentielles pour nos sociétés contemporaines : la créativité et l’éco-responsabilité.
-Plutôt que de s’emmitoufler derrière un épais bardage, l’immeuble se drape dans le voile léger d’une résille aussi ébouriffée que perforée, filtre solaire et gage de confidentialité pour les équipes au travail. Ses lames sont boulonnées sur une passerelle périphérique, conviviale pour les équipes d’entretien comme pour les collaborateurs qui n’ont plus qu’une vitre à traverser pour fumer leurs cigarettes.</p>
+      <section class="formulaire-contact">
+        <div class="adresse">
+          <p>ADRESSE : </p>
+          <p> 19 Rue La Noue Bras de Fer <p>
+          </p> 44200 Nantes </p>
+          <p>Du lun. au Ven. 8h - 19h</p>
+          <p> week-end 14h - 18h </p>
+        </div>
+        <form method="POST" id="formulaire" action="#">
+        <ul>
+            <div>
+                <li>
+                    <label for="nom"></label>
+                    <input type="text" name="nom" id="nom" placeholder="Nom">
+                </li>
+
+                <li>
+                    <label for="nom"></label>
+                    <input type="text" name="prenom" id="prenom" placeholder="Prénom">
+                </li>
+
+                <li>
+                    <label for="email"></label>
+                    <input type="text" name="email" id="email" placeholder="Email @">
+                </li>
+
+            </div>
+            <div>
+                <li>
+                    <label for="motif"></label>
+                    <input type="text" name="motif" id="motif" placeholder="Motif">
+                </li>
+                <li>
+                    <label for="Message"></label>
+                    <textarea name="message" id="message" rows="10" cols="40"
+                        placeholder="Message........................"></textarea>
+                </li>
+                <button type="submit" id="envoyer">Envoyer</button>
+            </div>
+        </ul>
+
+    </form>
       </section>
+
     </div>
-      <div class="parallax-2-home">
+      <div class="parallax-2-contact">
 
       </div>
     <!-- <div class="test">
