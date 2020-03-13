@@ -489,11 +489,7 @@ textarea {
     margin-top: -250px;
   }
 
-  @media screen and (max-width: 768px) {
-    .displaynone {
-      display: none;
-    }
-  }
+
   /* ICI LE CSS CALENDAR*/
 
   @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
@@ -552,3 +548,347 @@ textarea {
       background-color:#2B1C43 ;
       color: #f6f6f6;
   }
+
+
+  @media screen and (max-width: 768px) {
+    body {
+      text-align: center;
+    }
+    .texte { 
+      z-index: -1000;
+      height: auto;
+      width: auto;
+      padding: 5rem 2rem;
+      line-height: 20px;
+      color: white;
+      font-weight: 600;
+      text-align: start;
+    } 
+    .parallax-up-home {
+      clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);
+      height: auto;
+    }
+    .sous-titre {
+      width: 100%;
+  }
+    .parallax-up-home p {
+      text-align: justify;
+      padding: 0 1rem;
+      font-size: 1rem;
+      line-height: 20px;
+  }
+    .wrap-soustitre-home {
+      display: block;
+  }
+    .titre-contenu {
+      padding: 90px 0px 20px 0px;
+      font-size: 30px;
+      text-align: center;
+    }
+      .contenu-home {
+        display: block;
+        padding-top: 2rem;
+    }
+    .contenu-home p {
+      width: auto;
+      padding: 2rem 2rem 5rem 2rem;
+  }
+    .image-contenu {
+      width: 100%;
+      padding: 0px 0px 5px 0px;
+  }
+    .parallax-2-home {
+      width: auto;
+      height: 80px;
+      background-color: #f4f4f4;
+      clip-path: polygon(0 0%, 100% 40%, 100% 100%, 0 100%);
+      margin-top: -45px;
+  }
+     .parallax-up-home {
+      clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);
+      height: auto;
+    }
+    .sous-titre {
+      width: 100%;
+  }
+    .parallax-up-home p {
+      text-align: justify;
+      padding: 0 1rem;
+      font-size: 1rem;
+      line-height: 20px;
+  }
+    .wrap-soustitre-home {
+      display: block;
+  }
+    .titre-contenu {
+      padding: 90px 0px 20px 0px;
+      font-size: 30px;
+      text-align: center;
+    }
+      .contenu-home {
+        display: block;
+        padding-top: 2rem;
+    }
+    .contenu-home p {
+      width: auto;
+      padding: 2rem 2rem 5rem 2rem;
+  }
+    .image-contenu {
+      width: 100%;
+      padding: 0px 0px 5px 0px;
+  }
+    .parallax-2-home {
+      width: auto;
+      height: 80px;
+      background-color: #f4f4f4;
+      clip-path: polygon(0 0%, 100% 40%, 100% 100%, 0 100%);
+      margin-top: -45px;
+  }
+
+      body {
+      text-align: center;
+    }
+    .texte { 
+      z-index: -1000;
+      height: auto;
+      width: auto;
+      padding: 5rem 2rem;
+      line-height: 20px;
+      color: white;
+      font-weight: 600;
+      text-align: start;
+    } 
+    .parallax-up-home {
+      clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);
+      height: auto;
+    }
+    .sous-titre {
+      width: 100%;
+  }
+    .parallax-up-home p {
+      text-align: justify;
+      padding: 0 1rem;
+      font-size: 1rem;
+      line-height: 20px;
+  }
+    .wrap-soustitre-home {
+      display: block;
+  }
+    .titre-contenu {
+      padding: 90px 0px 20px 0px;
+      font-size: 30px;
+      text-align: center;
+    }
+      .contenu-home {
+        display: block;
+        padding-top: 2rem;
+    }
+    .contenu-home p {
+      width: auto;
+      padding: 2rem 2rem 5rem 2rem;
+  }
+    .image-contenu {
+      width: 100%;
+      padding: 0px 0px 5px 0px;
+  }
+    .parallax-2-home {
+      width: auto;
+      height: 80px;
+      background-color: #f4f4f4;
+      clip-path: polygon(0 0%, 100% 40%, 100% 100%, 0 100%);
+      margin-top: -45px;
+  }
+     .parallax-up-home {
+      clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);
+      height: auto;
+    }
+    .sous-titre {
+      width: 100%;
+  }
+    .parallax-up-home p {
+      text-align: justify;
+      padding: 0 1rem;
+      font-size: 1rem;
+      line-height: 20px;
+  }
+    .wrap-soustitre-home {
+      display: block;
+  }
+    .titre-contenu {
+      padding: 90px 0px 20px 0px;
+      font-size: 30px;
+      text-align: center;
+    }
+      .contenu-home {
+        display: block;
+        padding-top: 2rem;
+    }
+    .contenu-home p {
+      width: auto;
+      padding: 2rem 2rem 5rem 2rem;
+  }
+    .image-contenu {
+      width: 100%;
+      padding: 0px 0px 5px 0px;
+  }
+    .parallax-2-home {
+      width: auto;
+      height: 80px;
+      background-color: #f4f4f4;
+      clip-path: polygon(0 0%, 100% 40%, 100% 100%, 0 100%);
+      margin-top: -45px;
+  }
+  /*------------------------------------------------------------*/
+
+  .parallax-up {
+    clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%);
+    height: auto;
+  }
+  .sous-titre {
+    width: 100%;
+}
+  .parallax-up p {
+    text-align: justify;
+    padding: 0 1rem;
+    font-size: 1rem;
+    line-height: 20px;
+}
+  .wrap-soustitre-home {
+    display: block;
+}
+  .titre-contenu {
+    padding: 90px 0px 20px 0px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .image-contenu {
+    width: 100%;
+    padding: 0px 0px 5px 0px;
+}
+  .parallax-2-home {
+    width: auto;
+    height: 80px;
+    background-color: #f4f4f4;
+    clip-path: polygon(0 0%, 100% 40%, 100% 100%, 0 100%);
+    margin-top: -45px;
+}
+   .parallax-up-home {
+    clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);
+    height: auto;
+  }
+  .sous-titre {
+    width: 100%;
+}
+  .parallax-up-home p {
+    text-align: justify;
+    padding: 0 1rem;
+    font-size: 1rem;
+    line-height: 20px;
+}
+  .wrap-soustitre-home {
+    display: block;
+}
+  .titre-contenu {
+    padding: 90px 0px 20px 0px;
+    font-size: 30px;
+    text-align: center;
+  }
+    .contenu-home {
+      display: block;
+      padding-top: 2rem;
+  }
+  .contenu-home p {
+    width: auto;
+    padding: 2rem 2rem 5rem 2rem;
+}
+  .image-contenu {
+    width: 100%;
+    padding: 0px 0px 5px 0px;
+}
+  .parallax-2-home {
+    width: auto;
+    height: 80px;
+    background-color: #f4f4f4;
+    clip-path: polygon(0 0%, 100% 40%, 100% 100%, 0 100%);
+    margin-top: -45px;
+}
+  .flexbox-entreprises {
+    display: block;
+  }
+  .section-entreprises {
+    width: auto;
+  }
+  .parallax-2 {
+    clip-path: polygon(0 0%, 100% 40%, 100% 100%, 0 100%);
+    margin-top: -90px;
+    height: 100px;
+  }
+  .parallax-2-resa {
+    width: auto;
+    height: 800px;
+    background-color: #f4f4f4;
+    background-image: url("fond-bleu-2.png");
+    clip-path: polygon(0 0%, 100% 8%, 100% 100%, 0 100%);
+    margin-top: -60px;
+}
+.resa {
+  padding: 90px 2rem 20px 2rem;
+  text-align: center;
+}
+.text-resa {
+  text-align: center;
+  font-size: 13px;
+  padding: 0px 2rem 0px 2rem;
+  width: auto;
+}
+
+.parallax-up-contact {
+  width: auto;
+  background-color: #f4f4f4;
+  clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);
+  color: #1fb1ae;
+  height: 970px;
+}
+
+.adresse {
+  width: 100%;
+  padding-left: 0%;
+}
+
+.formulaire-contact {
+  width: 100%;
+  display: block;
+  align-items: center;
+  padding: 0;
+}
+
+form ul {
+  display: block;
+  list-style-type: none;
+}
+ul div {
+  margin: 0;
+}
+
+textarea {
+  margin: 1em;
+  padding: 0;
+}
+
+li input {
+  width: auto;
+}
+
+.parallax-2-contact {
+
+  width: auto;
+  height: 100px;
+  background-color: #1fb1ae;
+  background-image: url("fond-bleu-2.png");
+  clip-path: polygon(0 0%, 100% 30%, 100% 100%, 0 100%);
+  margin-top: -50px;
+
+}
+}
+
