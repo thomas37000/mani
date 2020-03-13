@@ -226,11 +226,11 @@ h1 {
 
 .parallax-up {
   width: auto;
-  /* height: 900px; */
+  height: auto;
   background-color: #1fb1ae;
   clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
   color: white;
-  /* padding-top:  */
+  padding-bottom: 20%;
 }
 
 /* .section-soustitre {
@@ -257,7 +257,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
-  height: 500px;
+  height: auto;
   padding-top: 80px;
 }
 
