@@ -1,0 +1,22 @@
+{
+  "name": "form",
+  "version": "1.0.0",
+  "description": "formulaire en js",
+  "main": "click.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomas37000/mani.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thomas37000/mani/issues"
+  },
+  "homepage": "https://github.com/thomas37000/mani#readme",
+  "dependencies": {
+    "formulaire": "0.0.8"
+  }
+}
