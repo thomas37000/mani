@@ -1,0 +1,362 @@
+* { padding: 0; margin: 0; }
+/* -----------------DEBUT DU PARALLAX----------------- */
+/* Create the parallax scrolling effect for all pages */
+body, html {
+  height: 100%;
+}
+
+.body-home {
+  background-image: url("img/mani.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+}
+
+.texte {
+  z-index: -1000;
+  height: auto;
+  width: 300px;
+  position: fixed;
+  padding-top: 200px;
+  padding-left: 65%;
+  color: #3d3d3d;
+}
+
+.parallax-home { width: 100%; height: 600px; }
+
+.parallax-up-home {
+  width: auto;
+  height: 800px;
+  background-color: #1fb1ae;
+  clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
+  color: white;
+}
+
+.tag-wrap { filter: drop-shadow(0px -10px 10px rgba(0, 0, 0, 0.3)); }
+
+.wrap-soustitre-home {
+  display: flex;
+  padding-top: 10px;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.sous-titre { width: 40%; }
+
+.parallax-2-home {
+  width: auto;
+  height: 200px;
+  background-color: #f4f4f4;
+  clip-path: polygon(0 0%, 100% 90%, 100% 100%, 0 100%);
+  margin-top: -200px;
+}
+
+.parallax-2 {
+  width: auto;
+  height: 200px;
+  background-color: #f4f4f4;
+  clip-path: polygon(0 0%, 100% 90%, 100% 100%, 0 100%);
+  margin-top: -180px;
+}
+
+.test{ height: 300px; background-color: black; }
+
+/* -----------------FIN DU PARALLAX----------------- */
+/* -----------------DEBUT DE LA NAV----------------- */
+body { font-family: sans-serif; }
+
+a { text-decoration: none; color: #3d3d3d; }
+
+a:active { color: #2b1c43; }
+
+header {
+  background-color: #f5f4f5;
+  width: 100vw;
+  z-index: 1000;
+  position: fixed;
+  box-shadow: 1px 1px 12px #555;
+}
+
+li { list-style: none; }
+
+.navigation {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.nav_links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+.nav_left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 1.6rem;
+}
+
+.nav_left li { padding-right: 1rem; }
+
+.nav_right {
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 2rem;
+}
+
+.logo img { height: 2rem; padding-right: 1rem; }
+
+/*---------------------FIN HEADER------------------*/
+/*-------------------DEBUT MAIN--------------------*/
+
+h1 { line-height: 2rem; padding-bottom: 1rem; }
+
+.texte {
+  z-index: -1000;
+  height: auto;
+  width: auto;
+  padding-right: 5rem;
+  color: #3d3d3d;
+  line-height: 1.5rem;
+  position: fixed;
+}
+
+.parallax { width: 100%; height: 600px; }
+
+.parallax-up {
+  width: auto;
+  height: auto;
+  background-color: #1fb1ae;
+  clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+  color: white;
+  padding-bottom: 20%;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 4%;
+}
+
+.section-soustitre p { font-style: italic; }
+
+img { max-width:100%; max-height:100%; }
+
+
+/* -----------------FIN DE LA NAV----------------- */
+.titre-contenu {
+  padding: 90px 50px 20px 0;
+  font-size: 30px;
+  text-align: right;
+}
+
+.parallax-up-home p {
+  text-align: right;
+  font-size: 13px;
+  padding: 0 50px 0 0;
+}
+
+.parallax-up p {
+  text-align: right;
+  font-size: 13px;
+  padding: 0 50px 0 0;
+}
+
+.italic { font-style: italic; }
+
+.contenu-home {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 80px;
+
+}
+.contenu-home p {
+  font-size: 12px;
+  text-align: left;
+  width: 50%;
+  padding: 0 20px 0 20px;
+}
+.image-contenu {
+  flex-grow: 1;
+  width: 25%;
+  padding: 0 20px 0 20px;
+}
+
+.image-contenu img {
+  display: inline-block;
+  width: 100%;
+}
+
+footer {
+    display: flex;
+    height: 80px;
+    background-color: #2B1C43;
+    color: white;
+    align-items: center;
+}
+
+.section-copyright {
+    font-size: 0.7rem;
+    flex-basis: 60%;
+    margin: auto 20px;
+    line-height: 150%;
+}
+
+.section-mediasocial {
+    flex-basis: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.fab { color: white; }
+
+@media screen and (max-width: 768px) {
+  body {
+    text-align: center;
+  }
+
+  .texte { 
+    z-index: -1000;
+    height: auto;
+    width: auto;
+    padding: 5rem 2rem;
+    line-height: 20px;
+    color: #3d3d3d;
+    font-weight: 600;
+    text-align: start;
+  } 
+
+  .parallax-up-home {
+    clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);
+    height: auto;
+  }
+
+  .sous-titre { width: 100%; }
+
+  .parallax-up-home p {
+    text-align: justify;
+    padding: 0 1rem;
+    font-size: 1rem;
+    line-height: 20px;
+  }
+ 
+  .wrap-soustitre-home { display: block; }
+
+  .titre-contenu {
+    padding: 90px 0px 20px 0px;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .contenu-home { display: block; padding-top: 2rem; }
+  
+  .contenu-home p { width: auto; padding: 2rem 2rem 5rem 2rem; }
+
+  .image-contenu { width: 100%; padding: 0px 0px 5px 0px; }
+    
+  .parallax-2-home {
+      width: auto;
+      height: 80px;
+      background-color: #f4f4f4;
+      clip-path: polygon(0 0%, 100% 40%, 100% 100%, 0 100%);
+      margin-top: -45px;
+  }
+
+  .parallax-up-home {
+    clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);
+    height: auto;
+  }
+
+  .parallax-up {
+    clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%);
+    height: auto;
+  }
+
+  .parallax-up p {
+    text-align: justify;
+    padding: 0 1rem;
+    font-size: 1rem;
+    line-height: 20px;
+  }
+
+  .parallax-up-home {
+    clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);
+    height: auto;
+  }
+
+  .titre-contenu {
+    padding: 90px 0px 20px 0px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+.flexbox-entreprises { display: block; }
+
+.section-entreprises { width: auto; }
+
+.parallax-2 {
+    clip-path: polygon(0 0%, 100% 40%, 100% 100%, 0 100%);
+    margin-top: -90px;
+    height: 100px;
+}
+
+.parallax-2-resa {
+    width: auto;
+    height: 800px;
+    background-color: #f4f4f4;
+    background-image: url("fond-bleu-2.png");
+    clip-path: polygon(0 0%, 100% 8%, 100% 100%, 0 100%);
+    margin-top: -60px;
+}
+.resa { padding: 90px 2rem 20px 2rem; text-align: center; }
+
+.text-resa {
+  text-align: center;
+  font-size: 13px;
+  padding: 0px 2rem 0px 2rem;
+  width: auto;
+}
+
+.parallax-up-contact {
+  width: auto;
+  background-color: #f4f4f4;
+  clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);
+  color: #1fb1ae;
+  height: 970px;
+}
+
+.adresse { width: 100%; padding-left: 0%;}
+
+.formulaire-contact {
+  width: 100%;
+  display: block;
+  align-items: center;
+  padding: 0;
+}
+
+form ul { display: block; list-style-type: none; }
+
+ul div { margin: 0; }
+
+textarea { margin: 1em; padding: 0; }
+
+li input { width: auto; }
+
+.parallax-2-contact {
+  width: auto;
+  height: 100px;
+  background-color: #1fb1ae;
+  background-image: url("fond-bleu-2.png");
+  clip-path: polygon(0 0%, 100% 30%, 100% 100%, 0 100%);
+  margin-top: -50px;
+  }
+}
+

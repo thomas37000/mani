@@ -1,0 +1,188 @@
+/* Create the parallax scrolling effect for all pages */
+
+.body-entreprises {
+    background-image: url("img/les-entreprises.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+}
+
+.flexbox-entreprises {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    height: auto;
+    padding-top: 80px;
+}
+  
+.section-entreprises {
+    display: flex;
+    width: 50%;
+    height: auto;
+    flex-shrink: 0;
+    padding-bottom: 20px;
+}
+  
+.divlogo-entreprises {
+    width: 25%;
+    padding: 0px 2rem 0px 2rem;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.divtext-entreprises {
+    width: auto;
+    height: auto;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    padding-right: 2rem;
+    color: white;
+}
+  
+.divtext-entreprises p span { font-size: 1.3rem; font-weight: bold; }
+
+@media screen and (max-width: 768px) {
+    body {
+      text-align: center;
+    }
+  
+    .texte { 
+      z-index: -1000;
+      height: auto;
+      width: auto;
+      padding: 5rem 2rem;
+      line-height: 20px;
+      font-weight: 600;
+      text-align: start;
+    } 
+  
+    .parallax-up-home {
+      clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);
+      height: auto;
+    }
+  
+    .sous-titre { width: 100%; }
+  
+    .parallax-up-home p {
+      text-align: justify;
+      padding: 0 1rem;
+      font-size: 1rem;
+      line-height: 20px;
+    }
+   
+    .wrap-soustitre-home { display: block; }
+  
+    .titre-contenu {
+      padding: 90px 0px 20px 0px;
+      font-size: 30px;
+      text-align: center;
+    }
+    
+    .contenu-home { display: block; padding-top: 2rem; }
+    
+    .contenu-home p { width: auto; padding: 2rem 2rem 5rem 2rem; }
+  
+    .image-contenu { width: 100%; padding: 0px 0px 5px 0px; }
+      
+    .parallax-2-home {
+        width: auto;
+        height: 80px;
+        background-color: #f4f4f4;
+        clip-path: polygon(0 0%, 100% 40%, 100% 100%, 0 100%);
+        margin-top: -45px;
+    }
+  
+    .parallax-up-home {
+      clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);
+      height: auto;
+    }
+  
+    .parallax-up {
+      clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%);
+      height: auto;
+    }
+  
+    .parallax-up p {
+      text-align: justify;
+      padding: 0 1rem;
+      font-size: 1rem;
+      line-height: 20px;
+    }
+  
+    .parallax-up-home {
+      clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);
+      height: auto;
+    }
+  
+    .titre-contenu {
+      padding: 90px 0px 20px 0px;
+      font-size: 30px;
+      text-align: center;
+    }
+  
+  .flexbox-entreprises { display: block; }
+  
+  .section-entreprises { width: auto; }
+  
+  .parallax-2 {
+      clip-path: polygon(0 0%, 100% 40%, 100% 100%, 0 100%);
+      margin-top: -90px;
+      height: 100px;
+  }
+  
+  .parallax-2-resa {
+      width: auto;
+      height: 800px;
+      background-color: #f4f4f4;
+      background-image: url("fond-bleu-2.png");
+      clip-path: polygon(0 0%, 100% 8%, 100% 100%, 0 100%);
+      margin-top: -60px;
+  }
+  .resa { padding: 90px 2rem 20px 2rem; text-align: center; }
+
+  .text-resa {
+    text-align: center;
+    font-size: 13px;
+    padding: 0px 2rem 0px 2rem;
+    width: auto;
+  }
+  
+  .parallax-up-contact {
+    width: auto;
+    background-color: #f4f4f4;
+    clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);
+    color: #1fb1ae;
+    height: 970px;
+  }
+  
+  .adresse { width: 100%; padding-left: 0%;}
+  
+  .formulaire-contact {
+    width: 100%;
+    display: block;
+    align-items: center;
+    padding: 0;
+  }
+  
+  form ul { display: block; list-style-type: none; }
+  
+  ul div { margin: 0; }
+  
+  textarea { margin: 1em; padding: 0; }
+  
+  li input { width: auto; }
+  
+  .parallax-2-contact {
+    width: auto;
+    height: 100px;
+    background-color: #1fb1ae;
+    background-image: url("fond-bleu-2.png");
+    clip-path: polygon(0 0%, 100% 30%, 100% 100%, 0 100%);
+    margin-top: -50px;
+    }
+  }
+  
+  
