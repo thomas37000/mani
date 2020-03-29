@@ -13,30 +13,22 @@
 /* Formulaire */
 
 #contactUS {
-    color: #1FB2AF;
-    margin: 1rem 20rem 0 0;
+  color: #1FB2AF;
+  margin: 1rem 20rem -1rem 0;
 }
 
 .formulaire-contact {
-  /*display: flex;
-  flex-direction: row;
-  align-items: center;*/
   padding-left: 40rem;
 }
 
 #formulaire {
-  display: flex;
-  flex-direction: row;
-}
-
-form ul {
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   list-style-type: none;
+  width: 400px;
+  padding: 10px;
 }
-
-form div { margin: 2em; }
 
 li input {
   width: 85%;
@@ -63,11 +55,12 @@ textarea {
   background-color: rgb(196, 187, 187);
 }
 
-#envoyer:hover {
+#envoyer:hover, #annuler:hover {
   background-color: #1FB2AF ;
   color: #fff;
 }
 
+#annuler { float: right; margin: 1rem; }
 .parallax-up-contact {
   width: auto;
   height: 900px;
@@ -115,9 +108,7 @@ textarea {
     align-items: center;
     padding: 0;
   }
-  
-  form ul { display: block; list-style-type: none; }
-  
+    
   ul div { margin: 0; }
   
   textarea { margin: 1em; padding: 0; }

@@ -1,6 +1,8 @@
 
-// ne marche pas avec un Text Area
+$('.carousel').carousel();
+$('.datepicker').datepicker();
 
+// ne marche pas avec un Text Area
 document.forms["formulaire"].addEventListener("submit", function(e) {
     let erreur;
  
