@@ -48,34 +48,41 @@
         <form method="POST" id="formulaire" name="formulaire" class="modal" action="#">
           <ul>
             <div>
+              <!-- quand on clique sur valider "
+                required rappelle automatiquement 
+                que un champ du formulaire n' a pas était rempli -->
               <li>
                 <label for="nom"></label>
-                <input type="text" name="nom" id="nom" placeholder="Nom">
+                <input type="text" name="nom" id="nom" placeholder="Nom" required>
               </li>
 
               <li>
                 <label for="nom"></label>
-                <input type="text" name="prenom" id="prenom" placeholder="Prénom">
+                <input type="text" name="prenom" id="prenom" placeholder="Prénom" required>
               </li>
 
               <li>
                 <label for="email"></label>
-                <input type="text" name="email" id="email" placeholder="Email @">
+                <input type="text" name="email" id="email" placeholder="Email @" required>
               </li>
-              <div>
-                <!--<li>
+              
+              <li>
                 <label for="motif"></label>
-                <input type="text" name="motif" id="motif" placeholder="Motif">
-              </li>-->
-                <li>
-                  <label for="Message"></label>
-                  <textarea name="message" id="message" rows="10" cols="40"
-                    placeholder="Message........................"></textarea>
+                <input type="tel" name="tel" id="tel" placeholder="Téléphone" required>
+              </li>
+
+              <li>
+                <label for="Message"></label>
+                <textarea name="message" id="message" rows="10" cols="40"
+                placeholder="Message........................"></textarea>
                 </li>
+
                 <button type="submit" id="envoyer">Envoyer</button>
+                <button type="reset"> Annuler</button>
               </div>
           </ul>
         </form>
+
         <p style="color:red" ; id="erreur"></p>
       </section>
 
