@@ -1,54 +1,117 @@
-var formulaire = require('formulaire');
 
-var myForm = formulaire({
-    //options
+/*document.forms["formulaire"].addEventListener("submit", function(e) {
+    let erreur;
+ 
+	let inputs = this;
+ 
+	for (var i = 0; i < inputs.length; i++) {
+		console.log(inputs[i]);
+		if (!inputs[i].value) {
+			erreur = "Veuillez renseigner tous les champs";
+			break;
+		}
+	}
+ 
+	if (erreur) {
+		e.preventDefault();
+		document.getElementById("erreur").innerHTML = erreur;
+		return false;
+	} else {
+		alert('Formulaire envoyé !');
+	}
 });
+*/
 
-var formulario = formulaire({
-    formClass : 'form',
-    formId : 'formulario_ID',
-    action: '/send',
-    method: 'post',
-    fieldClassWrapper: 'form-group',
-    fieldClass: 'form-control',
-    submit: { 
-        type: 'link',
-        clase: 'btn btn-primary sender',
-        href: 'javascript:void(0)',
-        onclick: null,
-        value: 'Enviar'
-    },
-    fields: {
-        name: { type: 'text', required: true },
-        surname: { type: 'text', required: true},
-        email: { type: 'email', required: true},
-        age: { type: 'number'},
-        country: {
-            type: 'select',
-            default: 'Select your country',
-            required: true,
-            options: {
-                spain: { label: 'Spain', selected: true},
-                usa: { label: 'USA'}
-            }
-        },
-        sex: {
-            type: 'radio',
-            options: {
-                m: { label: 'Male'},
-                f: { label: 'Female'}
-            }
-        },
-        preferences: {
-            type: 'checkbox',
-            options: {
-                soccer: { label: 'Soccer', checked: true },
-                basket: { label: 'Basket'},
-                tennis: { label: 'Tennis'},
-                volley: { label: 'Volley'},
-                hockey: { label: 'Hockey'},
-            }
-        },
-        observations: { type: 'textarea', required: true }
-    }
-});
+import React from 'react';
+import DatePicker from 'material-ui/DatePicker';
+import Toggle from 'material-ui/Toggle';
+
+const optionsStyle = {
+  maxWidth: 255,
+  marginRight: 'auto',
+};
+
+/**
+ * This example allows you to set a date range, and to toggle `autoOk`, and `disableYearSelection`.
+ */
+export default class DatePickerExampleToggle extends React.Component {
+  constructor(props) {
+    super(props);
+
+    const minDate = new Date();
+    const maxDate = new Date();
+    minDate.setFullYear(minDate.getFullYear() - 1);
+    minDate.setHours(0, 0, 0, 0);
+    maxDate.setFullYear(maxDate.getFullYear() + 1);
+    maxDate.setHours(0, 0, 0, 0);
+
+    this.state = {
+      minDate: minDate,
+      maxDate: maxDate,
+      autoOk: false,
+      disableYearSelection: false,
+    };
+  }
+
+  handleChangeMinDate = (event, date) => {
+    this.setState({
+      minDate: date,
+    });
+  };
+
+  handleChangeMaxDate = (event, date) => {
+    this.setState({
+      maxDate: date,
+    });
+  };
+
+  handleToggle = (event, toggled) => {
+    this.setState({
+      [event.target.name]: toggled,
+    });
+  };
+
+  render() {
+    return (
+      <div>
+        <DatePicker
+          floatingLabelText="Ranged Date Picker"
+          autoOk={this.state.autoOk}
+          minDate={this.state.minDate}
+          maxDate={this.state.maxDate}
+          disableYearSelection={this.state.disableYearSelection}
+        />
+        <div style={optionsStyle}>
+          <DatePicker
+            onChange={this.handleChangeMinDate}
+            autoOk={this.state.autoOk}
+            floatingLabelText="Min Date"
+            defaultDate={this.state.minDate}
+            disableYearSelection={this.state.disableYearSelection}
+          />
+          <DatePicker
+            onChange={this.handleChangeMaxDate}
+            autoOk={this.state.autoOk}
+            floatingLabelText="Max Date"
+            defaultDate={this.state.maxDate}
+            disableYearSelection={this.state.disableYearSelection}
+          />
+          <Toggle
+            name="autoOk"
+            value="autoOk"
+            label="Auto Ok"
+            toggled={this.state.autoOk}
+            onToggle={this.handleToggle}
+          />
+          <Toggle
+            name="disableYearSelection"
+            value="disableYearSelection"
+            label="Disable Year Selection"
+            toggled={this.state.disableYearSelection}
+            onToggle={this.handleToggle}
+          />
+        </div>
+      </div>
+    );
+  }
+}

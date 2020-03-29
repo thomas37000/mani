@@ -29,30 +29,23 @@
 
   <div class="texte" id="callUs">
     <h1>Si vous souhaitez<br>nous contacter</h1>
-    <p>Situé entre le Palais de Justice conçu par Jean Nouvel et la future École nationale
-      supérieure des Beaux-Arts installée dans les halles Alstom reconverties,
-      il exprime avec force la créativité et l’éco-responsabilité, deux défis du monde actuel.
-      Outre sa forme architecturale singulière, l’immeuble est donc innovant en matière de
-      développement durable via une synthèse performante des différentes cibles de la Haute
-      Qualité Environnementale pour laquelle il mobilise les compétences de jeunes sociétés
-      d’ingénierie. </p>
+    <p>ADRESSE : </p>
+    <p>19 Rue La Noue Bras de Fer<p>
+      </p>44200 Nantes</p>
+    <p>Du lun. au Ven. 8h - 19h</p>
+    <p>week-end 14h - 18h</p>
   </div>
 
   <div class="parallax-home"></div>
   <div class="tag-wrap">
     <div class="parallax-up-contact">
       <div class="wrap-soustitre-home">
-        <h2 class="titre-contenu">Contact</h2>
+        <h2 class="titre-contenu" id="contactUS">Contact</h2>
       </div>
       <section class="formulaire-contact">
-        <div class="adresse">
-          <p>ADRESSE : </p>
-          <p> 19 Rue La Noue Bras de Fer <p>
-            </p> 44200 Nantes </p>
-          <p>Du lun. au Ven. 8h - 19h</p>
-          <p> week-end 14h - 18h </p>
-        </div>
-        <form method="POST" id="formulaire" class="modal" action="#">
+   
+        <!--<div class="adresse"></div>-->
+        <form method="POST" id="formulaire" name="formulaire" class="modal" action="#">
           <ul>
             <div>
               <li>
@@ -69,33 +62,26 @@
                 <label for="email"></label>
                 <input type="text" name="email" id="email" placeholder="Email @">
               </li>
-
-            </div>
-            <div>
-              <li>
+              <div>
+                <!--<li>
                 <label for="motif"></label>
                 <input type="text" name="motif" id="motif" placeholder="Motif">
-              </li>
-              <li>
-                <label for="Message"></label>
-                <textarea name="message" id="message" rows="10" cols="40"
-                  placeholder="Message........................"></textarea>
-              </li>
-              <button type="submit" id="envoyer">Envoyer</button>
-
-            </div>
+              </li>-->
+                <li>
+                  <label for="Message"></label>
+                  <textarea name="message" id="message" rows="10" cols="40"
+                    placeholder="Message........................"></textarea>
+                </li>
+                <button type="submit" id="envoyer">Envoyer</button>
+              </div>
           </ul>
-
         </form>
+        <p style="color:red" ; id="erreur"></p>
       </section>
 
     </div>
     <div class="parallax-2-contact">
-
     </div>
-    <!-- <div class="test">
-
-    </div> -->
   </div>
 
   <footer>

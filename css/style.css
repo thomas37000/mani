@@ -3,6 +3,7 @@
 /* Create the parallax scrolling effect for all pages */
 body, html {
   height: 100%;
+  font-family: sans-serif;
 }
 
 .body-home {
@@ -25,48 +26,17 @@ body, html {
   color: #3d3d3d;
 }
 
-.parallax-home { width: 100%; height: 600px; }
-
-.parallax-up-home {
+/*.texte {
+  z-index: -1000;
+  height: auto;
   width: auto;
-  height: 800px;
-  background-color: #1fb1ae;
-  clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
-  color: white;
-}
+  padding-right: 5rem;
+  color: #3d3d3d;
+  line-height: 1.5rem;
+  position: fixed;
+} */
 
-.tag-wrap { filter: drop-shadow(0px -10px 10px rgba(0, 0, 0, 0.3)); }
-
-.wrap-soustitre-home {
-  display: flex;
-  padding-top: 10px;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-.sous-titre { width: 40%; }
-
-.parallax-2-home {
-  width: auto;
-  height: 200px;
-  background-color: #f4f4f4;
-  clip-path: polygon(0 0%, 100% 90%, 100% 100%, 0 100%);
-  margin-top: -200px;
-}
-
-.parallax-2 {
-  width: auto;
-  height: 200px;
-  background-color: #f4f4f4;
-  clip-path: polygon(0 0%, 100% 90%, 100% 100%, 0 100%);
-  margin-top: -180px;
-}
-
-.test{ height: 300px; background-color: black; }
-
-/* -----------------FIN DU PARALLAX----------------- */
-/* -----------------DEBUT DE LA NAV----------------- */
-body { font-family: sans-serif; }
+/* .test{ height: 300px; background-color: black; } */
 
 a { text-decoration: none; color: #3d3d3d; }
 
@@ -113,18 +83,16 @@ li { list-style: none; }
 .logo img { height: 2rem; padding-right: 1rem; }
 
 /*---------------------FIN HEADER------------------*/
-/*-------------------DEBUT MAIN--------------------*/
 
 h1 { line-height: 2rem; padding-bottom: 1rem; }
 
-.texte {
-  z-index: -1000;
-  height: auto;
-  width: auto;
-  padding-right: 5rem;
-  color: #3d3d3d;
-  line-height: 1.5rem;
-  position: fixed;
+.tag-wrap { filter: drop-shadow(0px -10px 10px rgba(0, 0, 0, 0.3)); }
+
+.wrap-soustitre-home {
+  display: flex;
+  padding-top: 10px;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .parallax { width: 100%; height: 600px; }
@@ -138,34 +106,52 @@ h1 { line-height: 2rem; padding-bottom: 1rem; }
   padding-bottom: 20%;
 }
 
-h2 {
-  font-size: 30px;
-  font-weight: bold;
-  padding-bottom: 4%;
+.parallax-home { width: 100%; height: 600px; }
+
+.parallax-up-home {
+  height: 800px;
+  background-color: #1fb1ae;
+  clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
+  color: #fff;
+  padding: 2rem;
 }
+
+.parallax-up-home p {
+  text-align: right;
+  padding: 0 50px 0 0;
+}
+
+/*.parallax-up p {
+  text-align: right;
+  font-size: 13px;
+  padding: 0 50px 0 0;
+}*/
+
+.parallax-2-home {
+  width: auto;
+  height: 200px;
+  background-color: #f4f4f4;
+  clip-path: polygon(0 0%, 100% 90%, 100% 100%, 0 100%);
+  margin-top: -200px;
+}
+
+.parallax-2 {
+  width: auto;
+  height: 200px;
+  background-color: #f4f4f4;
+  clip-path: polygon(0 0%, 100% 90%, 100% 100%, 0 100%);
+  margin-top: -180px;
+}
+
+.sous-titre { width: 40%; }
 
 .section-soustitre p { font-style: italic; }
 
 img { max-width:100%; max-height:100%; }
 
-
-/* -----------------FIN DE LA NAV----------------- */
-.titre-contenu {
-  padding: 90px 50px 20px 0;
-  font-size: 30px;
-  text-align: right;
-}
-
-.parallax-up-home p {
-  text-align: right;
-  font-size: 13px;
-  padding: 0 50px 0 0;
-}
-
-.parallax-up p {
-  text-align: right;
-  font-size: 13px;
-  padding: 0 50px 0 0;
+.titre-contenu { 
+  padding: 90px 50px 20px 0; 
+  font-size: 2.5rem; 
 }
 
 .italic { font-style: italic; }
@@ -177,7 +163,6 @@ img { max-width:100%; max-height:100%; }
 
 }
 .contenu-home p {
-  font-size: 12px;
   text-align: left;
   width: 50%;
   padding: 0 20px 0 20px;
@@ -188,16 +173,13 @@ img { max-width:100%; max-height:100%; }
   padding: 0 20px 0 20px;
 }
 
-.image-contenu img {
-  display: inline-block;
-  width: 100%;
-}
+.image-contenu img { display: inline-block; width: 100%; }
 
 footer {
     display: flex;
     height: 80px;
     background-color: #2B1C43;
-    color: white;
+    color: #fff;
     align-items: center;
 }
 
@@ -216,12 +198,11 @@ footer {
     align-items: center;
 }
 
-.fab { color: white; }
+/* logos réseaux sociaux */
+.fab { color: #fff; }
 
 @media screen and (max-width: 768px) {
-  body {
-    text-align: center;
-  }
+   body { text-align: center; }
 
   .texte { 
     z-index: -1000;
@@ -232,14 +213,19 @@ footer {
     color: #3d3d3d;
     font-weight: 600;
     text-align: start;
+    background-color: #f4f4f4;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   } 
+
+  .parallax-up {
+    clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%);
+    height: auto;
+  }
 
   .parallax-up-home {
     clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);
     height: auto;
   }
-
-  .sous-titre { width: 100%; }
 
   .parallax-up-home p {
     text-align: justify;
@@ -247,116 +233,30 @@ footer {
     font-size: 1rem;
     line-height: 20px;
   }
- 
-  .wrap-soustitre-home { display: block; }
+
+  .parallax-2-home {
+    width: auto;
+    height: 80px;
+    background-color: #f4f4f4;
+    clip-path: polygon(0 0%, 100% 40%, 100% 100%, 0 100%);
+    margin-top: -45px;
+  }
 
   .titre-contenu {
     padding: 90px 0px 20px 0px;
     font-size: 30px;
     text-align: center;
   }
-  
+
+  .sous-titre { width: 100%; }
+
+  .wrap-soustitre-home { display: block; }
+
   .contenu-home { display: block; padding-top: 2rem; }
   
   .contenu-home p { width: auto; padding: 2rem 2rem 5rem 2rem; }
 
   .image-contenu { width: 100%; padding: 0px 0px 5px 0px; }
     
-  .parallax-2-home {
-      width: auto;
-      height: 80px;
-      background-color: #f4f4f4;
-      clip-path: polygon(0 0%, 100% 40%, 100% 100%, 0 100%);
-      margin-top: -45px;
-  }
-
-  .parallax-up-home {
-    clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);
-    height: auto;
-  }
-
-  .parallax-up {
-    clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%);
-    height: auto;
-  }
-
-  .parallax-up p {
-    text-align: justify;
-    padding: 0 1rem;
-    font-size: 1rem;
-    line-height: 20px;
-  }
-
-  .parallax-up-home {
-    clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);
-    height: auto;
-  }
-
-  .titre-contenu {
-    padding: 90px 0px 20px 0px;
-    font-size: 30px;
-    text-align: center;
-  }
-
-.flexbox-entreprises { display: block; }
-
-.section-entreprises { width: auto; }
-
-.parallax-2 {
-    clip-path: polygon(0 0%, 100% 40%, 100% 100%, 0 100%);
-    margin-top: -90px;
-    height: 100px;
-}
-
-.parallax-2-resa {
-    width: auto;
-    height: 800px;
-    background-color: #f4f4f4;
-    background-image: url("fond-bleu-2.png");
-    clip-path: polygon(0 0%, 100% 8%, 100% 100%, 0 100%);
-    margin-top: -60px;
-}
-.resa { padding: 90px 2rem 20px 2rem; text-align: center; }
-
-.text-resa {
-  text-align: center;
-  font-size: 13px;
-  padding: 0px 2rem 0px 2rem;
-  width: auto;
-}
-
-.parallax-up-contact {
-  width: auto;
-  background-color: #f4f4f4;
-  clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);
-  color: #1fb1ae;
-  height: 970px;
-}
-
-.adresse { width: 100%; padding-left: 0%;}
-
-.formulaire-contact {
-  width: 100%;
-  display: block;
-  align-items: center;
-  padding: 0;
-}
-
-form ul { display: block; list-style-type: none; }
-
-ul div { margin: 0; }
-
-textarea { margin: 1em; padding: 0; }
-
-li input { width: auto; }
-
-.parallax-2-contact {
-  width: auto;
-  height: 100px;
-  background-color: #1fb1ae;
-  background-image: url("fond-bleu-2.png");
-  clip-path: polygon(0 0%, 100% 30%, 100% 100%, 0 100%);
-  margin-top: -50px;
-  }
 }
 
